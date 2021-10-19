@@ -14,7 +14,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="bg-light bg-gradient">
+    <div className="py-5">
       <div className="w-50 p-5 mx-auto">
         <div className="border border-info border-3 rounded py-5">
           <h2 className="text-center">Counter</h2>
