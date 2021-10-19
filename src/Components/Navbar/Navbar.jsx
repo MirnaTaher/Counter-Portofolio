@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="row justify-content-between py-2 fs-4 bg-light">
