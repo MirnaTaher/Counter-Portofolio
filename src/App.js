@@ -6,6 +6,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Components/Shop/Shop";
 import Home from "./Components/Home/Home";
 import Product from "./Components/Shop/Product";
+import TodoForm from "./Components/todo/TodoForm";
+import Todo from "./views/todo/Todo";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route path="/counter" component={Counter} />
             <Route path="/shop" component={Shop} exact />
             <Route path="/shop/:id" component={Product}/>
+            <Route path="/todo" component={Todo}/>
           </Switch>
         </div>
       </Router>

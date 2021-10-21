@@ -7,6 +7,7 @@ const Navbar = () => {
        <Link to="/"><li className="list-unstyled d-inline-block mx-3">Home</li></Link> 
        <Link to="/counter"><li className="list-unstyled d-inline-block mx-3">Counter</li></Link>
        <Link to="/shop"><li className="list-unstyled d-inline-block mx-3">Shop</li></Link>
+       <Link to="/todo"><li className="list-unstyled d-inline-block mx-3">To-do</li></Link>
       </ul>
     </div>
   );
