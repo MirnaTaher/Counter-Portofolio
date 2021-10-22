@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TodoForm from "../../Components/todo/TodoForm";
 import TodoList from "../../Components/todo/TodoList";
 import './Todo.css';
