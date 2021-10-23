@@ -1,6 +1,6 @@
 import { Field } from "formik";
 import React from "react";
-import FormikErrorMessage from "../../shared/FormikErrorMessage";
+import FormikErrorMessage from "./FormikErrorMessage";
 
 const RadioFields = ({option1,option2,name}) => {
   return (
