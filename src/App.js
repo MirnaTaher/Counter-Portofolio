@@ -8,7 +8,7 @@ import Home from "./Components/Home/Home";
 import Product from "./Components/Shop/Product";
 import Todo from "./views/todo/Todo";
 import LoginForm from "./Components/Login/Login";
-import RegisterForm from "./Register/RegisterForm";
+import RegisterForm from "./Components/Register/RegisterForm";
 
 function App() {
   return (

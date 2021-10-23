@@ -1,10 +1,9 @@
 import TodoForm from "../../Components/todo/TodoForm";
 import TodoList from "../../Components/todo/TodoList";
 import './Todo.css';
-import {useSelector} from 'react-redux'
+import {useSelector,useDispatch} from 'react-redux'
 import {addTodoAction} from '../../redux/TodoRedux';
 import {delTodoAction} from '../../redux/TodoRedux';
-import { useDispatch } from "react-redux";
 
 function Todo() {
 

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Shop.css";
 import { Link } from "react-router-dom";
-import Product from "./Product";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -18,7 +17,7 @@ const Shop = () => {
   };
 
   return (
-    <section className="row justify-content-between py-5">
+    <section className="row justify-content-center py-5">
       {products && products.length > 0 ? (
         products.map((product) => {
           return (

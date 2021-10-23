@@ -1,11 +1,6 @@
 import { useState } from "react";
-import { useSelector,useDispatch} from 'react-redux';
-
 
 const TodoForm = ({ addTodo }) => {
-
-
-  const addTodoRedux = useSelector(state => state.todos)
 
 
   const [title, setTitle] = useState("");
@@ -19,20 +14,25 @@ const TodoForm = ({ addTodo }) => {
   };
 
   return (
-    <div>
+    <div className="my-5 border rounded shadow py-5">
       <h3 className="text-muted mb-4">Add a TODO</h3>
 
       <form onSubmit={handleSubmission}>
         Title <br />
         <input
+        className="border rounded px-3 py-1"
           type="text"
           name="title"
+          placeholder="Todo title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <br />
         Content <br />
         <textarea
+         className="border rounded px-3 py-1 w-50"
+         placeholder="Todo Content"
+         width="100"
           name="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}

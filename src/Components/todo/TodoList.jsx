@@ -1,16 +1,26 @@
-
-const TodoList = ({ todos,deleteTodo }) => {
+const TodoList = ({ todos, deleteTodo }) => {
   const todosList =
     todos && todos.length > 0 ? (
       todos.map((todo, i) => {
         return (
           <ul key={i}>
-            <li className="border d-flex">
-            <div className="text">
-              <p>Title : {todo.title}</p>
-              <p>Content : {todo.content}</p>
-              <button className="btn btn-danger" onClick={()=>deleteTodo(i)}>delete</button>
-            </div>
+            <li className="border rounded w-75 mx-auto p-3">
+              <div className="text">
+                <div className="row justify-content-between align-items-center">
+                  <div className="col-7">
+                    <p>Title : {todo.title}</p>
+                    <p>Content : {todo.content}</p>
+                  </div>
+                  <div className="col-3">
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => deleteTodo(i)}
+                    >
+                      delete
+                    </button>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         );

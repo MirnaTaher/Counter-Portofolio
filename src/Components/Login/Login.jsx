@@ -26,12 +26,14 @@ const LoginForm = () => {
     validationSchema,
   });
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form  className="border rounded my-5 w-75 mx-auto shadow" onSubmit={formik.handleSubmit}>
       <div style={{ padding: 20 }}>
         <label htmlFor="email" style={{ display: "block" }}>
-          email
+          Email
         </label>
         <input
+        placeholder="Email"
+        className="rounded border px-2"
           type="email"
           id="email"
           name="email"
@@ -42,9 +44,11 @@ const LoginForm = () => {
         )}
 
         <label htmlFor="password" style={{ display: "block" }}>
-          password
+          Password
         </label>
         <input
+        placeholder="Password"
+        className="rounded border px-2"
           type="password"
           id="password"
           name="password"
@@ -65,9 +69,8 @@ const LoginForm = () => {
           {...formik.getFieldProps("rememberMe")}
         />
 
-        <button style={{ display: "block" }}>submit</button>
+        <button className="btn btn-primary d-block mx-auto">submit</button>
       </div>
-      {/* <pre>{JSON.stringify(formik, null, 4)}</pre> */}
     </form>
   );
 };
