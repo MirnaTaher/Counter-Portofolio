@@ -7,7 +7,7 @@ import {delTodoAction} from '../../redux/TodoRedux';
 
 function Todo() {
 
-  const todoState = useSelector(state => state.todos)
+  const todoState = useSelector(state => state.todoReducer.todos)
   const dispatch = useDispatch()
 
   const addTodo = (task) => {

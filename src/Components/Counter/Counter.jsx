@@ -4,7 +4,6 @@ import { incrementAction } from "../../redux/CounterRedux";
 import { decrementAction } from "../../redux/CounterRedux";
 
 const Counter = () => {
-  // const [count, setCount] = useState(0);
   const counterState = useSelector(state => state.countReducer.count);
   const dispatch = useDispatch();
 

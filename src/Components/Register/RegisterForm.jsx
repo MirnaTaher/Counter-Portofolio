@@ -1,19 +1,15 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
 import * as yup from "yup";
-import FormikField from "./FormikField";
+import FormikField from "../../shared/FormikField";
 import RadioFields from "./RadioFields";
-// import FormikRadio from "./Radio"
-// confirmPassword: "",  // must match password
-// active: false, // required
-// gender: "",  // required (drop down)
-// hoppies: [""], // (field array)
 
 /**
  * RegisterForm Component
  */
 const RegisterForm = () => {
   const initialValues = {
+    username:"",
     email: "",
     password: "",
     confirmPassword: "",
