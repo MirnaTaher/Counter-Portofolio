@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
 import * as yup from "yup";
 import FormikField from "../../shared/FormikField";
-import RadioFields from "./RadioFields";
+import RadioFields from "../../shared/RadioFields";
 
 /**
  * RegisterForm Component
